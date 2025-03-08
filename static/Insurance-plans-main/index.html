@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Plans</title>
+    <link rel="stylesheet" href="../Insurance-plans-main/style.css">
+    <style>
+        .ai-predict-btn {
+            background-color: #FFD700;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .ai-predict-btn:hover {
+            background-color: #FFC000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       
+        <ul>
+            <li><a href="#third-party">Third Party Insurance</a></li>
+            <li><a href="#comprehensive">Comprehensive Plans</a></li>
+            <li><a href="#own-damage">Own Damage Plans</a></li>
+            <li><a href="#trending">Trending Plans</a></li>
+            <li><a href="https://ai-predig-apna.netlify.app" class="ai-predict-btn">AI Predict</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="third-party">
+            <h2>Third Party Insurance</h2>
+            <div class="card-container" id="third-party-cards"></div>
+        </section>
+
+        <section id="comprehensive">
+            <h2>Comprehensive Plans</h2>
+            <div class="card-container" id="comprehensive-cards"></div>
+        </section>
+
+        <section id="own-damage">
+            <h2>Own Damage Plans</h2>
+            <div class="card-container" id="own-damage-cards"></div>
+        </section>
+
+        <section id="trending">
+            <h2>Trending Plans</h2>
+            <div class="card-container" id="trending-cards"></div>
+        </section>
+
+       
+    </div>
+
+    <!-- Modal for displaying company details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Contact info box -->
+
+
+    <script src="../Insurance-plans-main/script.js"></script>
+</body>
+</html>
